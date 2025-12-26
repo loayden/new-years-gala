@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+:root {
+  /* Brand Colors */
+  --brand-gold: #C9A24D;
+  --brand-black: #0B0B0B;
+  --brand-white: #F5F5F5;
+  
+  /* Legacy */
+  --background: #050507;
+  --foreground: #f3f2f1;
+  --gold: #C9A24D;
+  --muted: #9a9a9a;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #050507;
+    --foreground: #f3f2f1;
+  }
+}
+
+/* Typography */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Headings use Playfair for luxury aesthetic */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.5px;
+}
+
+h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 1.75rem;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+/* Paragraph spacing */
+p {
+  line-height: 1.7;
+}
+
+/* Links */
+a {
+  transition: color 0.3s ease;
+}
+
+/* Utility colors */
+.text-gold { color: var(--brand-gold) !important; }
+.bg-gold { background-color: var(--brand-gold) !important; }
+.border-gold { border-color: var(--brand-gold) !important; }
+
+/* Hide scrollbar while allowing scroll */
+.scrollbar-hide::-webkit-scrollbar { display: none; }
+.scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+
+/* Smooth shadows for premium feel */
+.shadow-premium {
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+}
+
+/* Section spacing */
+section {
+  scroll-margin-top: 80px;
+}
+
+
